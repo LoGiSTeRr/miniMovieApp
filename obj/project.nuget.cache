@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j7LUSdbicKVGVd2yA2bowxSq4h6lP8XlKL0Cqyij3TLb1+VRaYv3WbCoq8nbmY9PoZVPk+MHLuFyZq56wvQesA==",
+  "success": true,
+  "projectFilePath": "D:\\RiderProjects\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GL503GE\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview3\\communitytoolkit.mvvm.8.0.0-preview3.nupkg.sha512"
+  ],
+  "logs": []
+}
