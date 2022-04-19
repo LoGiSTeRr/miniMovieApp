@@ -10,12 +10,19 @@ namespace WpfApp1.ViewModels;
 
 
 
+
 // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
 
 public partial class SearchViewModel : BaseViewModel
 {
-    private MoviesProxy _moviesProxy;
 
+    // private static SearchViewModel? _instance;
+    // public static SearchViewModel? Instance => _instance ??= new SearchViewModel();
+    
+    
+    
+    private MoviesProxy _moviesProxy;
+    
     [ObservableProperty] private string _textBoxText;
     [ObservableProperty] private SearchResult _searchResult;
     
@@ -27,13 +34,11 @@ public partial class SearchViewModel : BaseViewModel
     [ICommand] private void Search()
     {
         SearchResult = _moviesProxy.Search(TextBoxText);
-        MessageBox.Show("1");
-
     }
 
     [ICommand]
     private void OpenMovie(Movie movie)
     {
-        MessageBox.Show("2");
+        
     }
 }
