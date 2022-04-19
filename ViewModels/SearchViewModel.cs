@@ -1,4 +1,5 @@
 using System.Net;
+using System.Windows;
 using System.Windows.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -20,11 +21,19 @@ public partial class SearchViewModel : BaseViewModel
     
     public SearchViewModel()
     {
-        _moviesProxy = new MoviesProxy();
+        _moviesProxy = new MoviesProxy(new MovieTmdbService());
     }
 
     [ICommand] private void Search()
     {
         SearchResult = _moviesProxy.Search(TextBoxText);
+        MessageBox.Show("1");
+
+    }
+
+    [ICommand]
+    private void OpenMovie(Movie movie)
+    {
+        MessageBox.Show("2");
     }
 }

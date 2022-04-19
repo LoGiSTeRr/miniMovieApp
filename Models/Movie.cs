@@ -18,4 +18,8 @@ public class Movie
     public int vote_count { get; set; }
     public bool video { get; set; }
     public double vote_average { get; set; }
+    public override string ToString()
+    {
+        return original_title;
+    }
 }

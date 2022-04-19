@@ -4,10 +4,25 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:WpfApp1.Views"
-             xmlns:vc="clr-namespace:WpfApp1.ViewModels"
-             d:DataContext="{d:DesignInstance vc:SearchViewModel}"
+             xmlns:vm="clr-namespace:WpfApp1.ViewModels"
+             xmlns:m="clr-namespace:WpfApp1.Models"
+             d:DataContext="{d:DesignInstance vm:SearchViewModel}"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <DataTemplate x:Key="MovieListTemplate" DataType="{x:Type m:Movie}">
+            <TextBlock>
+                <Run Text="{Binding original_title}"/>
+                <TextBlock.InputBindings>
+                    <MouseBinding MouseAction="LeftDoubleClick"
+                                  Command="{Binding DataContext.OpenMovieCommand,
+                                  RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"
+                                  CommandParameter="{Binding ElementName=MovieListBox,Path=SelectedItem}"/>
+                </TextBlock.InputBindings>
+            </TextBlock>
+        </DataTemplate>
+    </UserControl.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -18,8 +33,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBox Margin="10 0 10 0" Text="{Binding TextBoxText}"></TextBox>
-        <Button Grid.Column="1" Margin="10 0 10 0" Command="{Binding SearchCommand}"></Button>
-        <ListBox Grid.Row="1" Grid.ColumnSpan="2" ItemsSource="{Binding SearchResult.results}"></ListBox>
+        <Button Grid.Column="1" Margin="10 0 10 0" Command="{Binding SearchCommand}" Content="Search"></Button>
+        <ListBox x:Name="MovieListBox" Grid.Row="1" Grid.ColumnSpan="2" ItemTemplate="{StaticResource MovieListTemplate}" ItemsSource="{Binding SearchResult.results}">
+            
+        </ListBox>
         
     </Grid>
 </UserControl>

@@ -5,11 +5,12 @@ using WpfApp1.Models;
 namespace WpfApp1.Services;
 
 public class MovieTmdbService : IService
-{
+{ 
     private string _apiKey;
     public MovieTmdbService()
     {
         _apiKey = "697ae244168bf931109d18ec944608b3";
+        webClient = new WebClient();
     }
     private readonly WebClient webClient;
     public SearchResult Search(string str)
