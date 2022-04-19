@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "j7LUSdbicKVGVd2yA2bowxSq4h6lP8XlKL0Cqyij3TLb1+VRaYv3WbCoq8nbmY9PoZVPk+MHLuFyZq56wvQesA==",
+  "dgSpecHash": "ZK8IAVncD9PmJsFXv554IVSf6DPDyd1LBmUUkIpLYVt69DCw2liO30l6LBkNP5svOFSlyPxR9uQtD1YZioDcDw==",
   "success": true,
   "projectFilePath": "D:\\RiderProjects\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\GL503GE\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview3\\communitytoolkit.mvvm.8.0.0-preview3.nupkg.sha512"
+    "C:\\Users\\GL503GE\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview3\\communitytoolkit.mvvm.8.0.0-preview3.nupkg.sha512",
+    "C:\\Users\\GL503GE\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
