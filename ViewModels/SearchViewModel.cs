@@ -15,12 +15,9 @@ namespace WpfApp1.ViewModels;
 
 public partial class SearchViewModel : BaseViewModel
 {
-
     // private static SearchViewModel? _instance;
     // public static SearchViewModel? Instance => _instance ??= new SearchViewModel();
-    
-    
-    
+
     private MoviesProxy _moviesProxy;
     
     [ObservableProperty] private string _textBoxText;

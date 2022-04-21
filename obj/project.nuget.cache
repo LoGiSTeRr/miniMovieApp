@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/iDRoWR6LZFABKDykI87LOeuBAjuxiGBln37/eFp0WmloK9htrd8yoRonU/f8rEOxEieU+6rt1GtJkmU1BE9oQ==",
+  "dgSpecHash": "ZK8IAVncD9PmJsFXv554IVSf6DPDyd1LBmUUkIpLYVt69DCw2liO30l6LBkNP5svOFSlyPxR9uQtD1YZioDcDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Boro_ha61\\RiderProjects\\miniMovieApp\\WpfApp1.csproj",
+  "projectFilePath": "D:\\RiderProjects\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Boro_ha61\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview3\\communitytoolkit.mvvm.8.0.0-preview3.nupkg.sha512",
-    "C:\\Users\\Boro_ha61\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\GL503GE\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview3\\communitytoolkit.mvvm.8.0.0-preview3.nupkg.sha512",
+    "C:\\Users\\GL503GE\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,13 +1,7 @@
-﻿using WpfApp1.ViewModels;
+﻿using WpfApp1.Enums;
+using WpfApp1.ViewModels;
 
 namespace WpfApp1.Fabrics;
-
-
-public enum ViewModelEnum
-{
-    SearchViewModel,
-    MovieInfoViewModel
-}
 
 public class ViewModelsFabric
 {
@@ -16,7 +10,7 @@ public class ViewModelsFabric
         return viewModelType switch
         {
             ViewModelEnum.SearchViewModel => new SearchViewModel(),
-            //ViewModelEnum.MovieInfoViewModel => new (),
+            ViewModelEnum.MovieInfoViewModel => new MovieInfoViewModel(),
         };
     }
 }
